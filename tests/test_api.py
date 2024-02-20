@@ -4,7 +4,11 @@ from fastapi.encoders import jsonable_encoder
 
 from data.test_data import test_posts, test_accts
 
-base_url = "http://localhost:8000/pairs"
+# Test python app
+# base_url = "http://localhost:8000/pairs"
+
+#Test app in docker container
+base_url = "http://0.0.0.0:8000/pairs"
 
 
 @pytest.fixture
