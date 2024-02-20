@@ -15,9 +15,11 @@ pip install poetry
 
 # Docker for containerization
 [Install Docker](https://www.docker.com/)
+```
 
 ## Standalone Installation and Run
 
+```bash
 # Clone the repository
 git clone <repository-url>
 cd <repository-directory>
@@ -27,11 +29,12 @@ poetry install
 
 # Run the FastAPI app
 poetry run uvicorn src.main:app --host 0.0.0.0 --port 8000
+```
 
 The app will be accessible at http://localhost:8000.
 
 ## Containerized Deployment
-
+```bash
 # Build the Docker image
 docker build -t account-similarity-api .
 
@@ -39,11 +42,12 @@ docker build -t account-similarity-api .
 docker run -p 8000:8000 account-similarity-api
 
 The app will be accessible at http://localhost:8000.
+```
 
 ## Cleanup
-
+```bash
 # To stop the standalone FastAPI app, press Ctrl + C.
 # To stop and remove the Docker container
 docker ps  # Find the CONTAINER_ID
 docker stop CONTAINER_ID
-
+```
