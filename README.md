@@ -44,6 +44,11 @@ docker run -p 8000:8000 account-similarity-api
 
 The app will be accessible at http://localhost:8000.
 
+## Run Tests
+```bash
+# Use poetry and pytest
+poetry run pytest tests/test_api.py
+```
 
 ## Cleanup
 ```bash
