@@ -40,9 +40,10 @@ docker build -t account-similarity-api .
 
 # Run the Docker container
 docker run -p 8000:8000 account-similarity-api
+```
 
 The app will be accessible at http://localhost:8000.
-```
+
 
 ## Cleanup
 ```bash
